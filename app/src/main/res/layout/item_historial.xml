@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--By: El Bryant-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <TextView
+        android:id="@+id/tvIdPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/tvFechaEntregado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/tvHoraEntregado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/tvDireccionOrigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/tvLatitudOrigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/tvLongitudOrigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/tvDireccionEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/tvLatitudDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/tvLongitudDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/tvdniRepartidor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/tvIdTienda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/tvNombreRepartidor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/blanco" >
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="12"
+            android:layout_margin="15dp"
+            android:gravity="center" >
+        
+            <ImageView
+                android:id="@+id/ivDetalleHistorial"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_mas"
+                android:background="@drawable/redondo_coral"
+                android:tint="@color/blanco"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center" />
+        
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="8"
+                android:layout_marginEnd="2.5dp" >
+            
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tienda"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/indigo"
+                    android:textSize="13sp" />
+            
+                <TextView
+                    android:id="@+id/tvNombreTienda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/negro"
+                    android:textSize="15sp" />
+        
+            </LinearLayout>
+        
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="4"
+                android:layout_marginStart="2.5dp" >
+            
+                <TextView
+                    android:id="@+id/tvFechaSolicitado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/verde"
+                    android:textSize="13sp" />
+    
+                <TextView
+                    android:id="@+id/tvHoraSolicitado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/verde"
+                    android:textSize="13sp" />
+        
+            </LinearLayout>
+    
+        </LinearLayout>
+        
+    </androidx.cardview.widget.CardView>
+    
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_verde"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/blanco"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="15dp"
+        android:paddingHorizontal="30dp"
+        android:layout_below="@+id/cvHistorial"
+        android:layout_alignParentEnd="true"
+        android:elevation="2dp"/>
+
+</RelativeLayout>

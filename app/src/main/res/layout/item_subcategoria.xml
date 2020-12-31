@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><!--By: El Bryant-->
+<LinearLayout
+    android:id="@+id/llaySubcategoria"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center" >
+    
+    <TextView
+        android:id="@+id/tvIdSubcategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <FrameLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"  >
+        
+        <FrameLayout
+            android:id="@+id/flayFondo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cuadro_redondeado_blanco"
+            android:visibility="gone" />
+        
+        <ImageView
+            android:id="@+id/ivSubcategoria"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7.5dp"
+            android:elevation="10dp" />
+        
+    </FrameLayout>
+    
+    <TextView
+        android:id="@+id/tvNombreSubcategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/indigo"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:visibility="gone" />
+    
+</LinearLayout>

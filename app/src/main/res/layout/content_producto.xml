@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?><!--By: El Bryant-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:id="@+id/ivImagenTienda"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_alignParentTop="true"
+        android:transitionName="ivImagenTienda"
+        android:scaleType="centerCrop" />
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/degradado_productos"
+        android:alpha="0.54" />
+    
+    <ImageView
+        android:id="@+id/ivLogoTienda"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/tvNombreTienda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:textColor="@color/blanco"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:layout_above="@id/tvSubcategorias"
+        android:transitionName="tvNombreTienda" />
+    
+    <TextView
+        android:id="@+id/tvSubcategorias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textColor="@color/blanco"
+        android:textSize="15sp"
+        android:lineHeight="20sp"
+        android:textAlignment="center"
+        android:layout_above="@id/flayProductos" />
+    
+    <FrameLayout
+        android:id="@+id/flayProductos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tarjeta"
+        android:layout_below="@id/ivImagenTienda"
+        android:layout_marginTop="-20dp">
+        
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProductos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp" />
+        
+    </FrameLayout>
+    
+    <TextView
+        android:id="@+id/tvTotalPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_coral"
+        android:textColor="@color/blanco"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_above="@+id/flayProductos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:paddingHorizontal="15dp"
+        android:elevation="100dp"
+        android:visibility="gone" />
+    
+    <Button
+        android:id="@+id/btnConfirmarPedido"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Confirmar pedido"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="15sp"
+        android:textColor="@color/blanco"
+        android:background="@drawable/boton_indigo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginHorizontal="70dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

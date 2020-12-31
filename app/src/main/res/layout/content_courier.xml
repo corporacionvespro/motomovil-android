@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="50dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Quién envía?"
+                android:textColor="@color/indigo"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/etNombreOrigen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre"
+                    android:textColorHint="@color/gris"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:background="@null" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_perfil"
+                    android:tint="@color/verde"
+                    android:layout_marginEnd="5dp"
+                    android:padding="2.5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/etCelularOrigen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Celular"
+                    android:textColorHint="@color/gris"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:inputType="phone"
+                    android:background="@null" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_celular"
+                    android:tint="@color/verde"
+                    android:layout_marginEnd="5dp"
+                    android:padding="2.5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/etDireccionOrigen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Dirección de origen"
+                    android:textColorHint="@color/gris"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:background="@null" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_location"
+                    android:tint="@color/verde"
+                    android:layout_marginEnd="5dp"
+                    android:padding="2.5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo de pago"
+                android:fontFamily="@font/comfortaa_bold"
+                android:textColor="@color/coral"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp" >
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/rbtEfectivo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Efectivo"
+                        android:textColor="@color/indigo"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:textSize="15sp"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/rbtDeposito"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Depósito"
+                        android:textColor="@color/indigo"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rgDeposito"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="15dp"
+                        android:visibility="gone" >
+
+                        <RadioButton
+                            android:id="@+id/rbtConCosto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Con costo de envío"
+                            android:textColor="@color/indigo"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:textSize="15sp"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:id="@+id/rbtSinCosto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Con costo de envío"
+                            android:textColor="@color/indigo"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:textSize="15sp" />
+
+                    </RadioGroup>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Quién recibe?"
+                android:textColor="@color/indigo"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/etNombreDestino"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre"
+                    android:textColorHint="@color/gris"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:background="@null" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_perfil"
+                    android:tint="@color/verde"
+                    android:layout_marginEnd="5dp"
+                    android:padding="2.5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/etCelularDestino"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Celular"
+                    android:textColorHint="@color/gris"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:inputType="phone"
+                    android:background="@null" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_celular"
+                    android:tint="@color/verde"
+                    android:layout_marginEnd="5dp"
+                    android:padding="2.5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/tvFechaRecojo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha de recojo"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_mes"
+                    android:tint="@color/verde"
+                    android:layout_marginEnd="5dp"
+                    android:padding="2.5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/tvHoraRecojo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hora de recojo"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_reloj"
+                    android:tint="@color/verde"
+                    android:layout_marginEnd="5dp"
+                    android:padding="2.5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/tvDireccionDestino"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dirección de destino"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_location"
+                    android:tint="@color/verde"
+                    android:layout_marginEnd="5dp"
+                    android:padding="2.5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/etDepartamento"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Departamento"
+                    android:textColorHint="@color/gris"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:text="Lambayeque"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:background="@null" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_location"
+                    android:tint="@color/verde"
+                    android:layout_marginEnd="5dp"
+                    android:padding="2.5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/etProvincia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Provincia"
+                    android:textColorHint="@color/gris"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:background="@null" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_location"
+                    android:tint="@color/verde"
+                    android:layout_marginEnd="5dp"
+                    android:padding="2.5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/etDistrito"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Distrito"
+                    android:textColorHint="@color/gris"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:background="@null" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_location"
+                    android:tint="@color/verde"
+                    android:layout_marginEnd="5dp"
+                    android:padding="2.5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Datos del producto"
+                android:textColor="@color/indigo"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="18sp"
+                android:layout_marginVertical="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/etValorProducto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Valor del producto"
+                    android:textColorHint="@color/gris"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:background="@null" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_pago"
+                    android:tint="@color/verde"
+                    android:layout_marginEnd="5dp"
+                    android:padding="2.5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/etDescripcion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Descripción"
+                    android:textColorHint="@color/gris"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:inputType="phone"
+                    android:background="@null" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_celular"
+                    android:tint="@color/verde"
+                    android:layout_marginEnd="5dp"
+                    android:padding="2.5dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAceptar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/boton_indigo"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/blanco"
+                android:text="Aceptar"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginTop="40dp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginBottom="70dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/flayTutorial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99E1EFE8" >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="30dp"
+            app:cardBackgroundColor="@color/blanco"
+            app:cardCornerRadius="25dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="30dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="El courier es un servicio que transporta tus objetos o productos a diversas ubicaciones, con total discreción, seguridad y comodidad."
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/indigo"
+                    android:textSize="15sp"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/btnCerrarTutorial"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/boton_indigo"
+                    android:text="Aceptar"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:textSize="12sp"
+                    android:textColor="@color/blanco"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="30dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</RelativeLayout>

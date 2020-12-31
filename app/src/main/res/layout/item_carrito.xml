@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--By: El Bryant-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llayItemCarrito"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    
+        <TextView
+            android:id="@+id/tvNombreProducto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa_bold"
+            android:textSize="18sp"
+            android:textColor="@color/negro"
+            android:layout_weight="1"/>
+    
+        <TextView
+            android:id="@+id/tvCantidadProducto"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/coral"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:paddingTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/cuadro_redondeado_blanco" />
+        
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tvIdProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp" >
+        
+        <TextView
+            android:id="@+id/tvPrecioProducto"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:background="@drawable/boton_verde"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/blanco"
+            android:textSize="12sp"
+            android:paddingTop="2.5dp"
+            android:paddingHorizontal="15dp"
+            android:textAlignment="center"
+            android:layout_weight="3"
+            android:layout_marginVertical="5dp"
+            android:alpha="0.6"/>
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6" />
+    
+        <ImageView
+            android:id="@+id/ivMenos"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_eliminar"
+            android:tint="@color/coral"
+            android:layout_marginVertical="5dp"
+            android:layout_marginEnd="10dp"/>
+        
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gris"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp" />
+
+</LinearLayout>

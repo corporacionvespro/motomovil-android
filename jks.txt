@@ -1,0 +1,4 @@
+MotomovilCliente.jks
+key store password: motomovil123456
+key alias: motomovil
+key password: motomovil123456

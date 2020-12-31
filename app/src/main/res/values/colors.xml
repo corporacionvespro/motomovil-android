@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2d2d73</color>
+    <color name="colorPrimaryDark">#d8eae1</color>
+    <color name="colorAccent">#6bba77</color>
+    <color name="indigo">#2d2d73</color>
+    <color name="verde">#6bba77</color>
+    <color name="coral">#e26042</color>
+    <color name="fondo">#e1efe8</color>
+    <color name="blanco">#ffffff</color>
+    <color name="gris">#6b6b6b</color>
+    <color name="negro">#1a1a1a</color>
+    <color name="cambio_color">#dbe9ee</color>
+</resources>

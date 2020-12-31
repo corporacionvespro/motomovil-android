@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--By: El Bryant-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:fitsSystemWindows="true">
+    
+    <TextView
+        android:id="@+id/tvTitular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:lineHeight="30sp"
+        android:text="¡Estás a punto de completar tu pedido!"
+        android:textAlignment="center"
+        android:textColor="@color/indigo"
+        android:textSize="30sp" />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvTitular" >
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="70dp" >
+        
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center" >
+            
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_cerrar_algo_mas"
+                    android:tint="@color/coral"
+                    android:padding="3dp" />
+            
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Necesitas algo más?"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/indigo"
+                    android:textSize="18sp"
+                    android:layout_marginStart="5dp" />
+        
+            </LinearLayout>
+        
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="30dp">
+            
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cubiertos"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/negro"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+            
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/boton_verde_opacidad" >
+                
+                    <ImageView
+                        android:id="@+id/ivMenosCubiertos"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_menos"
+                        android:tint="@color/coral"
+                        android:layout_marginStart="5dp" />
+                
+                    <TextView
+                        android:id="@+id/tvCantidadCubiertos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textColor="@color/indigo"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="10dp"/>
+                
+                    <ImageView
+                        android:id="@+id/ivMasCubiertos"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_mas"
+                        android:tint="@color/coral"
+                        android:layout_marginEnd="5dp" />
+            
+                </LinearLayout>
+        
+            </LinearLayout>
+        
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp" >
+            
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Vasos"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/negro"
+                    android:textSize="15sp"
+                    android:layout_weight="1"  />
+            
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/boton_verde_opacidad" >
+                
+                    <ImageView
+                        android:id="@+id/ivMenosVasos"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_menos"
+                        android:tint="@color/coral"
+                        android:layout_marginStart="5dp" />
+                
+                    <TextView
+                        android:id="@+id/tvCantidadVasos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textColor="@color/indigo"
+                        android:textSize="18sp"
+                        android:layout_marginHorizontal="10dp" />
+                
+                    <ImageView
+                        android:id="@+id/ivMasVasos"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_mas"
+                        android:tint="@color/coral"
+                        android:layout_marginEnd="5dp" />
+            
+                </LinearLayout>
+        
+            </LinearLayout>
+        
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp" >
+            
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_cerrar_direccion"
+                    android:tint="@color/coral"
+                    android:padding="3dp" />
+            
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dirección de entrega"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/indigo"
+                    android:textSize="18sp"
+                    android:layout_marginStart="5dp" />
+        
+            </LinearLayout>
+        
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp" >
+            
+                <EditText
+                    android:id="@+id/etDireccionDestino"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Aquí la dirección de entrega"
+                    android:textColorHint="@color/gris"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:background="@null" />
+            
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_location"
+                    android:tint="@color/verde"
+                    android:layout_marginEnd="5dp"
+                    android:padding="2.5dp"/>
+        
+            </LinearLayout>
+        
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="40dp">
+            
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_cerrar_celular"
+                    android:tint="@color/coral"
+                    android:padding="3dp" />
+            
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Teléfono de referencia"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/indigo"
+                    android:textSize="18sp"
+                    android:layout_marginStart="5dp" />
+        
+            </LinearLayout>
+        
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp" >
+            
+                <EditText
+                    android:id="@+id/etCelularCliente"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="000 000 000"
+                    android:textColorHint="@color/gris"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:inputType="phone"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:background="@null" />
+        
+            </LinearLayout>
+        
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp" >
+            
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_pago"
+                    android:tint="@color/coral"
+                    android:padding="3dp" />
+            
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tú eliges cómo pagar"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="@color/indigo"
+                    android:textSize="18sp"
+                    android:layout_marginStart="5dp" />
+        
+            </LinearLayout>
+        
+            <CheckBox
+                android:id="@+id/chkEfectivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="En efectivo"
+                android:fontFamily="@font/comfortaa_bold"
+                android:textColor="@color/negro"
+                android:buttonTint="@color/verde"
+                android:checked="true" />
+        
+            <CheckBox
+                android:id="@+id/chkTarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="Con tarjeta"
+                android:fontFamily="@font/comfortaa_bold"
+                android:textColor="@color/negro"
+                android:buttonTint="@color/verde" />
+    
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="40dp">
+        
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_cerrar_celular"
+                    android:tint="@color/coral"
+                    android:padding="3dp" />
+                
+                <Switch
+                    android:id="@+id/swFactura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Deseo factura"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/indigo"
+                    android:layout_marginStart="5dp" />
+    
+            </LinearLayout>
+    
+            <LinearLayout
+                android:id="@+id/llayRuc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:visibility="gone" >
+        
+                <EditText
+                    android:id="@+id/etRuc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="RUC"
+                    android:textColorHint="@color/gris"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:background="@null" />
+    
+            </LinearLayout>
+    
+            <LinearLayout
+                android:id="@+id/llayRazonSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/boton_blanco"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:visibility="gone" >
+        
+                <TextView
+                    android:id="@+id/tvRazonSocial"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Razón social"
+                    android:textColorHint="@color/gris"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:inputType="phone"
+                    android:textColor="@color/gris"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:background="@null" />
+    
+            </LinearLayout>
+            
+            <Button
+                android:id="@+id/btnAceptar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/boton_indigo"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/blanco"
+                android:text="Aceptar"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:layout_marginTop="40dp"
+                android:layout_marginHorizontal="50dp" />
+    
+        </LinearLayout>
+        
+    </ScrollView>
+    
+    <FrameLayout
+        android:id="@+id/flayCargando"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99E1EFE8"
+        android:visibility="gone" >
+        
+        <com.singh.daman.proprogressviews.DotsZoomProgress
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:inner_color="@color/indigo"
+            app:mid_color="@color/indigo"
+            app:outer_color="@color/indigo"
+            app:min_radius="10dp"
+            app:inner_radius="20dp"
+            app:mid_radius="26dp"
+            app:outer_radius="30dp"
+            app:zoom_speed="15" />
+    
+    </FrameLayout>
+
+</RelativeLayout>

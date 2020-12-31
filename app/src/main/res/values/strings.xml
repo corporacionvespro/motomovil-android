@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Motomovil</string>
+    <string name="no_location_data_provided">No se proporcionaron datos de ubicación</string>
+    <string name="service_not_available">Lo sentimos, el servicio no está disponible</string>
+    <string name="invalid_lat_long_used">Se utilizó una latitud o longitud no válida</string>
+    <string name="no_address_found">Lo siento, no se encontró dirección</string>
+    <string name="address_found">Dirección encontrada</string>
+    <string name="no_geocoder_available">No hay geocodificador disponible</string>
+    <string name="permission_rationale">Se necesita permiso de ubicación para la funcionalidad principal</string>
+    <string name="permission_denied_explanation">Se denegó el permiso, pero es necesario para la funcionalidad principal.</string>
+    <string name="settings">Configuraciones</string>
+</resources>

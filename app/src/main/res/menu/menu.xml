@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/navPedidos"
+        android:title="Mis pedidos"
+        android:iconTint="@color/blanco"
+        android:icon="@drawable/ic_pedidos" />
+
+    <item
+        android:id="@+id/navPerfil"
+        android:title="Mi perfil"
+        android:iconTint="@color/blanco"
+        android:icon="@drawable/ic_perfil" />
+
+    <item
+        android:id="@+id/navCategorias"
+        android:title="Categorías"
+        android:iconTint="@color/blanco"
+        android:icon="@drawable/ic_sombrero" />
+
+    <item
+        android:id="@+id/navPromociones"
+        android:title="Códigos promocionales"
+        android:iconTint="@color/blanco"
+        android:icon="@drawable/ic_sombrero"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/navPreguntas"
+        android:title="Preguntas frecuentes"
+        android:iconTint="@color/blanco"
+        android:icon="@drawable/ic_pregunta"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/navNotificaciones"
+        android:title="Notificaciones"
+        android:iconTint="@color/blanco"
+        android:icon="@drawable/ic_campana"
+        android:visible="false" />
+
+</menu>

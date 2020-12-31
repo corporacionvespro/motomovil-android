@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?><!--By: El Bryant-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo"
+    android:fitsSystemWindows="true" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp" >
+        
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_carrito"
+            android:tint="@color/verde" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mi pedido del día"
+            android:fontFamily="@font/quicksand_bold"
+            android:textColor="@color/indigo"
+            android:textSize="25sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="30dp" />
+        
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tvNombreTienda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textColor="@color/verde"
+        android:textSize="15sp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:transitionName="tvNombreTienda"
+        android:layout_marginTop="-5dp"/>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="30dp" />
+    
+    <Button
+        android:id="@+id/btnRealizarPedido"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Realizar pedido"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/blanco"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:background="@drawable/boton_indigo"
+        android:layout_marginHorizontal="50dp" />
+    
+    <LinearLayout
+        android:id="@+id/llaySubproductos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="70dp" >
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Más personas añadieron productos a su pedido\n¡Añádelos tú también!"
+            android:textAlignment="center"
+            android:textColor="#41747f"
+            android:textSize="12sp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:layout_marginTop="15dp" />
+        
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_abajo"
+            android:layout_gravity="center"
+            android:tint="#41747f" />
+        
+    </LinearLayout>
+
+</LinearLayout>

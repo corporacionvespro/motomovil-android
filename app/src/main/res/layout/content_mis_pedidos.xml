@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo" >
+    
+    <ImageView
+        android:id="@+id/ivMenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_menu"
+        android:tint="@color/indigo"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp" />
+    
+    <TextView
+        android:id="@+id/tvTitular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tus pedidos"
+        android:fontFamily="@font/quicksand_bold"
+        android:textColor="@color/indigo"
+        android:textSize="25sp"
+        android:layout_below="@id/ivMenu"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp" />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitular" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    
+            <RelativeLayout
+                android:id="@+id/rlayHoy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="15dp" >
+        
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/boton_blanco"
+                    android:layout_marginEnd="12.5dp"
+                    android:gravity="center"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" >
+            
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_hoy"
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginHorizontal="15dp" />
+            
+                    <TextView
+                        android:id="@+id/tvHoy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hoy"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:textColor="@color/gris"
+                        android:textSize="15sp"
+                        android:transitionName="tvTitular" />
+        
+                </LinearLayout>
+        
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/redondo_indigo"
+                    android:src="@drawable/ic_derecha"
+                    android:tint="@color/blanco"
+                    android:padding="7dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true" />
+    
+            </RelativeLayout>
+    
+            <RelativeLayout
+                android:id="@+id/rlaySemana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="15dp" >
+        
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/boton_blanco"
+                    android:layout_marginEnd="12.5dp"
+                    android:gravity="center"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" >
+            
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_semana"
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginHorizontal="15dp" />
+            
+                    <TextView
+                        android:id="@+id/tvSemana"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Esta semana"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:textColor="@color/gris"
+                        android:textSize="15sp"
+                        android:transitionName="tvTitular" />
+        
+                </LinearLayout>
+        
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/redondo_indigo"
+                    android:src="@drawable/ic_derecha"
+                    android:tint="@color/blanco"
+                    android:padding="7dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true" />
+    
+            </RelativeLayout>
+    
+            <RelativeLayout
+                android:id="@+id/rlayMes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="15dp" >
+        
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/boton_blanco"
+                    android:layout_marginEnd="12.5dp"
+                    android:gravity="center"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" >
+            
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_mes"
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginHorizontal="15dp" />
+            
+                    <TextView
+                        android:id="@+id/tvMes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Este mes"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:textColor="@color/gris"
+                        android:textSize="15sp"
+                        android:transitionName="tvTitular" />
+        
+                </LinearLayout>
+        
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/redondo_indigo"
+                    android:src="@drawable/ic_derecha"
+                    android:tint="@color/blanco"
+                    android:padding="7dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true" />
+    
+            </RelativeLayout>
+    
+            <RelativeLayout
+                android:id="@+id/rlayAnio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="15dp" >
+        
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/boton_blanco"
+                    android:layout_marginEnd="12.5dp"
+                    android:gravity="center"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" >
+            
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_mes"
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginHorizontal="15dp" />
+            
+                    <TextView
+                        android:id="@+id/tvAnio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Este año"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:textColor="@color/gris"
+                        android:textSize="15sp"
+                        android:transitionName="tvTitular" />
+        
+                </LinearLayout>
+        
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/redondo_indigo"
+                    android:src="@drawable/ic_derecha"
+                    android:tint="@color/blanco"
+                    android:padding="7dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true" />
+    
+            </RelativeLayout>
+    
+            <RelativeLayout
+                android:id="@+id/rlayEntreFechas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="15dp" >
+        
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/boton_blanco"
+                    android:layout_marginEnd="12.5dp"
+                    android:gravity="center"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" >
+            
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_entre_fechas"
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginHorizontal="15dp" />
+            
+                    <TextView
+                        android:id="@+id/tvEntreFechas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Entre fechas"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:textColor="@color/gris"
+                        android:textSize="15sp"
+                        android:transitionName="tvTitular" />
+        
+                </LinearLayout>
+        
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/redondo_indigo"
+                    android:src="@drawable/ic_derecha"
+                    android:tint="@color/blanco"
+                    android:padding="7dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true" />
+    
+            </RelativeLayout>
+            
+        </LinearLayout>
+        
+    </ScrollView>
+    
+    <FrameLayout
+        android:id="@+id/flayCargando"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99E1EFE8"
+        android:visibility="gone" >
+        
+        <com.singh.daman.proprogressviews.DotsZoomProgress
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:inner_color="@color/indigo"
+            app:mid_color="@color/indigo"
+            app:outer_color="@color/indigo"
+            app:min_radius="10dp"
+            app:inner_radius="20dp"
+            app:mid_radius="26dp"
+            app:outer_radius="30dp"
+            app:zoom_speed="15" />
+    
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlayCategoria"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/boton_blanco"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="50dp"
+        app:cardCornerRadius="25dp" >
+    
+        <ImageView
+            android:id="@+id/ivCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+        
+    </androidx.cardview.widget.CardView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/boton_blanco"
+        android:layout_below="@+id/cvCategoria"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="-60dp"
+        android:elevation="2dp" >
+        
+        <TextView
+            android:id="@+id/tvIdCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+        
+        <TextView
+            android:id="@+id/tvNombreCategoria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/indigo"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="Nombre"
+            android:shadowColor="@color/indigo"
+            android:shadowDx="1.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginHorizontal="5dp"
+            android:textAlignment="center"
+            android:transitionName="tvNombreCategoria"/>
+        
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_derecha"
+            android:tint="@color/indigo"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone" />
+    
+    </LinearLayout>
+
+</RelativeLayout>

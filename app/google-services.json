@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "401148326937",
+    "firebase_url": "https://motomovil.firebaseio.com",
+    "project_id": "motomovil",
+    "storage_bucket": "motomovil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401148326937:android:48845d23ad8cb26d4da688",
+        "android_client_info": {
+          "package_name": "moto.movil.chiclayo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401148326937-28n0dd45bl4brcc8uiic2g12tkk2689t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsDOQGJsDDB-i8LxYlyK25GYpc49x2mnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401148326937-28n0dd45bl4brcc8uiic2g12tkk2689t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
